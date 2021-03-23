@@ -1,0 +1,21 @@
+Kuriamas fuzzy sistemos modelis, kuris pagal pateiktus šuns ūgio, svorio ir amžiaus parametrus pasakys šuns
+kūno sudėjimą- lieknas, vidutinis ar nutukęs.
+
+Įėjimo kintamieji:
+    * Ūgis: [15-125 cm], fuzzy aibės: mažas, vidutinis, aukštas
+    * Svoris: [1-80 kg], fuzzy aibės: mažas, vidutinis, didelis, labai didelis
+    * Amžius: [1-20 m], fuzzy aibės: jaunas, brandus, senas
+
+
+Fuzzy taisyklės:
+    * Jei ūgis mažas, ir svoris mažas arba vidutinis- vidutinis
+    * Jei ūgis mažas, ir svoris didelis arba labai didelis- nutukęs
+    * Jei ūgis vidutinis, ir svoris mažas, ir amžius senas- liesas
+    * Jei ūgis vidutinis, ir svoris mažas, ir amžius vidutinis arba jaunas- vidutinis
+    * Jei ūgis vidutinis, ir svoris vidutinis- vidutinis
+    * Jei ūgis vidutinis arba didelis, ir svoris didelis- vidutinis
+    * Jei ūgis vidutinis, ir svoris labai didelis, ir amžius senas arba vidutinis- nutukęs
+    * Jei ūgis vidutinis, ir svoris labai didelis, ir amžius jaunas- vidutinis
+    * Jei ūgis didelis, ir svoris labai didelis, ir amžius senas- nutukęs
+    * Jei ūgis didelis, ir svoris labai didelis, ir amžius jaunas arba vidutinis- vidutinis
+    * Jei ūgis didelis, ir svoris mažas arba vidutinis- lieknas
